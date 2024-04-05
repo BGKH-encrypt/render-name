@@ -1,31 +1,36 @@
-* {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-.isHidden {
-  display: none;
-}
+<style> để chứa CSS
+var styleElement = document.createElement('style');
 
-.box {
+// Đặt nội dung CSS để ngăn chặn tràn dòng khi in
+styleElement.textContent = `
+    @media print {
+        body {
+            break-inside: avoid;
+        }
+    }
+
+    .box {
         font-family: 'Roboto', Arial, serif;
-        color: black; 
-        border: 2px solid #ccc; 
-        border-radius: 5px; 
+        color: black; /* Màu chữ đen */
+        border: 2px solid #ccc; /* Đường viền màu xám */
+        border-radius: 5px; /* Viền cong */
         margin: 10px 0;
         padding: 20px;
-        background-color: #f9f9f9; 
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        background-color: #f9f9f9; /* Màu nền xám nhạt */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
     }
-}
-.solution {
+
+    .solution {
         font-family: 'Roboto', Arial, serif;
-        color: black; 
-        background-color: #c0defa;
-        border-radius: 5px; 
+        color: black; /* Màu chữ đen */
+        background-color: #c0defa; /* Màu nền xanh nhạt */
+        border-radius: 5px; /* Viền cong */
         border: 10px;
         margin: 20px 0;
         padding: 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    }
+`;</style>
 }
 #login {
   border: 1px solid;
