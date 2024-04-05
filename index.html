@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon.vn QnA Renderer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="login" method="post">
+      <p>Đăng nhập</p>
+      <input type="text" id="username" placeholder="Tài khoản" />
+      <input type="password" id="password" placeholder="Mật khẩu" />
+      <input type="submit" value="Đăng nhập" />
+    </form>
+    <div id="courseIDDiv" class="isHidden">
+      <p>Nhập mã đề thi</p>
+      <form id="courseIDForm" method="get">
+        <input type="text" id="courseID" placeholder="Mã đề thi" />
+        <input type="submit" value="Render đáp án" />
+        <p>Hướng dẫn lấy id</p>
+        <p>vào bài kiểm tra bất kì, sau đó lấy chữ số bên cuối link</p>
+        <img style="border: 1px solid" src="example.png" alt="" srcset="" />
+        <p>Nhấn Home để hiện lại hộp thoại</p>
+      </form>
+    </div>
+    <div id="answerSheet"></div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

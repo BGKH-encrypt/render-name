@@ -1,0 +1,32 @@
+* {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.isHidden {
+  display: none;
+}
+
+.box {
+  border: 1px solid;
+  margin: 10px 0;
+  padding: 10px;
+}
+.solution {
+  background-color: #fefcf2;
+  border: 1px solid;
+  padding: 5px;
+}
+#login {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+  margin: auto;
+}
+#courseIDDiv {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+  margin: auto;
+}
