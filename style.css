@@ -1,12 +1,4 @@
-<style> để chứa CSS
-var styleElement = document.createElement('style');
 
-// Đặt nội dung CSS để ngăn chặn tràn dòng khi in
-styleElement.textContent = `
-    @media print {
-        body {
-            break-inside: avoid;
-        }
     }
 
     .box {
