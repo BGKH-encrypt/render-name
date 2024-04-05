@@ -1,20 +1,28 @@
-* {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
 }
 .isHidden {
   display: none;
 }
 
 .box {
-  border: 1px solid;
-  margin: 10px 0;
-  padding: 10px;
-}
-.solution {
-  background-color: #fefcf2;
-  border: 1px solid;
-  padding: 5px;
+        font-family: 'Roboto', Arial, serif;
+        color: black; /* Màu chữ đen */
+        border: 2px solid #ccc; /* Đường viền màu xám */
+        border-radius: 5px; /* Viền cong */
+        margin: 10px 0;
+        padding: 20px;
+        background-color: #f9f9f9; /* Màu nền xám nhạt */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    }
+
+    .solution {
+        font-family: 'Roboto', Arial, serif;
+        color: black; /* Màu chữ đen */
+        background-color: #c0defa; /* Màu nền xanh nhạt */
+        border-radius: 5px; /* Viền cong */
+        border: 10px;
+        margin: 20px 0;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
 }
 #login {
   border: 1px solid;
