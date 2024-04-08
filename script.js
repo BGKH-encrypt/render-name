@@ -130,15 +130,15 @@ function renderListening_Writing(e) {
 
 function renderAnswer(e) {
   const detail = `
-  <div class="box">
+<div class="box">
     <div class="qna">
-    <p class="question"><strong>${i}.</strong> ${e["questionText"]}</p>
+    <p class="question"><strong>Câu ${i}.</strong> ${e["questionText"]}</p>
     <p class="selection"><strong><span style="color: blue;">A.</span></strong> ${e["a"]}</p>
     <p class="selection"><strong><span style="color: blue;">B.</span></strong> ${e["b"]}</p>
     <p class="selection"><strong><span style="color: blue;">C.</span></strong> ${e["c"]}</p>
     <p class="selection"><strong><span style="color: blue;">D.</span></strong> ${e["d"]}</p>
-      <p class="answer">Đáp án: <strong style="color: blue; font-weight: bold;">${e["key"]}</strong></p>
-    </div>
+    <p class="answer">Đáp án: <strong style="color: blue; font-weight: bold;">${e["key"]}</strong></p>
+</div>
       <div class="solution">${e["answer"]}</div>
   </div>    
   `;
