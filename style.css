@@ -5,20 +5,9 @@
 .isHidden {
   display: none;
 }
-
-.box {
-  color: black;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .solution {
   color: black;
-  background-color: #c0defa;
+  background-color: #f6f3d9;
   border-radius: 5px;
   border: 10px;
   margin: 20px 0;
