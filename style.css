@@ -1,35 +1,64 @@
-{
-  font-family: 'Times New Roman', Arial, serif;
-  line-height: 1.6;
-  font-size: 13px; 
+body {
+    font-family: 'Times New Roman', Arial, serif;
+    line-height: 1.6;
+    font-size: 16px; 
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.isHidden {
-  display: none;
+#login, #courseIDDiv {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.solution {
-  color: black;
-  background-color: #fefcf2;
-  border-radius: 5px;
-  border: 10px;
-  margin: 20px 0;
-  padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+#login p, #courseIDDiv p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-#login {
-  border: 1px solid;
-  padding: 10px;
-  text-align: center;
-  width: 25%;
-  margin: auto;
+#login input[type="text"],
+#login input[type="password"],
+#courseIDDiv input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-#courseIDDiv {
-  border: 1px solid;
-  padding: 10px;
-  text-align: center;
-  width: 25%;
-  margin: auto;
+#login input[type="submit"],
+#courseIDDiv input[type="submit"] {
+    width: calc(100% - 40px);
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#login input[type="submit"]:hover,
+#courseIDDiv input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
