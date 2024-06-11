@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOON.VN</title>
+    <title>BÀI GIẢNG KHÓA HỌC</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Arial, serif;
+            line-height: 1.6;
+            font-size: 16px; 
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        #login, #courseIDDiv {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        #login p, #courseIDDiv p {
+            margin: 10px 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        #login input[type="text"],
+        #login input[type="password"],
+        #courseIDDiv input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        #login input[type="submit"],
+        #courseIDDiv input[type="submit"] {
+            width: calc(100% - 40px);
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        #login input[type="submit"]:hover,
+        #courseIDDiv input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <form id="login" method="post">
@@ -14,13 +80,14 @@
         <input type="submit" value="Đăng nhập">
     </form>
     <div id="courseIDDiv" class="isHidden">
-        <p>Nhập ID Moon Test</p>
+        <p>NHẬP ID MOON TEST</p>
         <form id="courseIDForm" method="get">
             <input type="text" id="courseID" placeholder="ID MOON">
             <input type="submit" value="Kiểm tra">
             <p>HƯỚNG DẪN LẤY ID MOON TEST</p>
             <p>LẤY SỐ CUỐI CÙNG Ở LINK TEST</p>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAHsBRAM5Uu3g40SC0RBjGyMr4uKkjgYW9qpaSQdwZUwuCGKAiywNBir6cOhNWHBVm5scavPj3Xks-JHAVL7q0IO1lpPaTYPckiy1SXgyu92T-alvBoaYa9WhT9JuCqhUlW684R_xQJ7awvTa_GGtjoTUgFVxhxbCgFsjCRIkM2nlYCgMw9GzPEakNSQg/s600/Untitled.png" alt="">
+            <p>TRỞ VỀ</p>
         </form>
     </div>
     <div id="answerSheet"></div>
